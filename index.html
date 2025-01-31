@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>The Hobby Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">The Hobby Survey Form</h1>
+    <p id="description">We'd love to learn about your preffered hobbies!</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name<input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+      <label id="email-label" for="email">Email<input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+      <label id="number-label" for="number">Age(optional)<input id="number" name="name" type="number" min=0 max=120 placeholder="Age" /></label>
+      <fieldset>
+        <legend>What hobbies do you like to do?</legend>
+        <label for="hobbies">
+          <input id="hobbies" class="inline" type="checkbox" value="1" >Reading</input>
+          <input id="hobbies" class="inline" type="checkbox" value="2" >Writing</input>
+          <input id="hobbies" class="inline" type="checkbox" value="3" >Drawing</input>
+          <input id="hobbies" class="inline" type="checkbox" value="4" >Listening to music</input>
+          <input id="hobbies" class="inline" type="checkbox" value="5" >Watching movies or TV shows</input>
+          <input id="hobbies" class="inline" type="checkbox" value="6" >Cooking or Baking</input>
+          <input id="hobbies" class="inline" type="checkbox" value="7" >Excercising</input>
+          <input id="hobbies" class="inline" type="checkbox" value="8" >Video games</input>
+          <input id="hobbies" class="inline" type="checkbox" value="9" >Other</input>
+          </label>
+         </fieldset>
+         <fieldset>
+          <legend>Out of the mentioned hobbies, which one is your favorite?</legend>
+            <label for=""><input id="reading" name="favorite hobby" class="inline" type="radio" value="1" checked />Reading</label>
+            <label for="reading"><input id="reading" name="favorite hobby" class="inline" type="radio" value="2" />Reading</label>
+            <label for="writing"><input id="writing" name="favorite hobby" class="inline" type="radio" value="3" />Writing</label>
+            <label for="drawing"><input id="drawing" name="favorite hobby" class="inline" type="radio" value="4" />Drawing</label>
+            <label for="music"><input id="music" name="favorite hobby" class="inline" type="radio" value="5" />Listenting to music</label>
+            <label for="movies-tv"><input id="movies-tv" name="favorite hobby" class="inline" type="radio" value="6"  />Watching movies or TV shows</label>
+            <label for="cooking"><input id="cooking" name="favorite hobby" class="inline" type="radio" value="7" />Cooking or Baking</label>
+            <label for="exercise"><input id="exercise" name="favorite hobby" class="inline" type="radio" value="8" />Exercising</label>
+            <label for="video-games"><input id="video-games" name="favorite hobby" class="inline" type="radio" value="9" />Video games</label>
+            <label for="other-hobby"><input id="other-hobby" name="favorite hobby" class="inline" type="radio" value="10" />Other</label>
+        </fieldset>
+      <label for="dropdown">How often do you engage in your favorite hobby?
+        <select id="dropdown" name="frequency">
+            <option value="">(select one)</option>
+            <option value="1">Daily</option>
+            <option value="2">Weekly</option>
+            <option value="3">Monthly</option>
+            <option value="4">Ocassionally</option>
+        </select>
+      </label>
+   
+     
+      <label for="comments">Any comments or suggestions?
+        <textarea id="comments" name="comments"></textarea>
+      </label>
+      <label for="submit">
+        <input id="submit" type="submit" value="Submit">
+      </label>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #597D35;
+}
+  
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline;
+}
